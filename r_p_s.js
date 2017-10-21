@@ -31,21 +31,21 @@ function determineWinner(userChoice,computerChoice) {
  	}  
   if (userChoice === 'rock') {
     if (computerChoice === 'paper') {
-      return 'You suck';
+      return 'Tough luck!';
 		 } else {
       return 'Winner winner chicker dinner!'
     }
   } 
   if (userChoice === 'paper') {
     if (computerChoice === 'scissors') {
-      return 'Dumbass!';
+      return 'Tough luck!';
     } else {
       return 'Winner winner chicken dinner!';
     }
   }
   if (userChoice === 'scissors') {
     if (computerChoice === 'rock') { 
-      return 'Maybe next time!';
+      return 'Tough Luck!';
     } else {
       return 'Winner winner chicken dinner!';
   }
@@ -53,6 +53,7 @@ function determineWinner(userChoice,computerChoice) {
 }
         
 const playGame = () =>  {
+// in this excercise you input the user's guess.
   const userChoice = getUserChoice('scissors');
   const computerChoice = getComputerChoice();
   console.log('You threw: ' + userChoice);
